@@ -1,0 +1,101 @@
+<div class="gallery-lightbox-container">
+  <div class="gallery">
+    <div *ngFor="let data of galleryData; let i = index" class="gallery-img">
+      <img
+        (click)="onPreviewImage(i)"
+        loading="eager"
+        [src]="data.urls.regular"
+        [alt]="i"
+      />
+    </div>
+  </div>
+  <div *ngIf="showMask" class="lightbox" @animation2>
+    <!-- <span *ngIf="showCount" class="count"
+        >{{ currentIndex + 1 }}/{{ totalImageCount }}</span
+      > -->
+    <!-- <button
+      *ngIf="previewImage"
+      type="button"
+      class="close-btn"
+      (click)="onClosePreview()"
+  
+    >
+      <fa-icon
+        
+        class="fa-solid fa-2xl"
+        [icon]="faClose"
+      ></fa-icon>
+    </button> -->
+    <button
+      *ngIf="previewImage"
+      type="button"
+      class="close-btn"
+      (click)="onClosePreview()"
+      mat-icon-button
+      color="warn"
+    >
+      <mat-icon><fa-icon class="fa-solid" [icon]="faClose"></fa-icon></mat-icon>
+    </button>
+    <!-- <button
+      type="button"
+      *ngIf="controls"
+      class="btn-lightbox-carousel btn-prev"
+      (click)="prev()"
+    >
+      <fa-icon   class="fa-solid fa-2xl" [icon]="faLeft"></fa-icon>
+    </button> -->
+    <button
+      *ngIf="controls"
+      class="btn-lightbox-carousel btn-prev"
+      (click)="prev()"
+      mat-icon-button
+    >
+      <mat-icon><fa-icon class="fa-solid" [icon]="faLeft"></fa-icon></mat-icon>
+    </button>
+    <!-- <button
+      mat-mini-fab
+      
+      type="button"
+      *ngIf="controls"
+      class="btn-lightbox-carousel btn-next"
+      (click)="next()"
+    >
+    
+    <mat-icon><fa-icon 
+      class="fa-solid fa-2xl" [icon]="faRight"></fa-icon></mat-icon>
+      
+    </button> -->
+    <button
+      *ngIf="controls"
+      class="btn-lightbox-carousel btn-next"
+      (click)="next()"
+      mat-icon-button
+    >
+      <mat-icon><fa-icon class="fa-solid" [icon]="faRight"></fa-icon></mat-icon>
+    </button>
+    <div
+      *ngIf="previewImage"
+      [@animation]="{ value: 'visible' }"
+      (@animation.done)="onAnimationEnd($event)"
+      class="lightbox-img"
+    >
+      <img loading="eager" [src]="currentLightboxImage.urls.full" [alt]="" />
+      <!-- <div class="bottom-left">&copy; Dinesh Dixit</div> -->
+      <div  class="bottom-left"
+         style="color: rgb(0, 255, 132);" mat-flat-button >
+          
+            <fa-icon  class="fa-solid" [icon]="faCopyright"></fa-icon>
+            Dinesh Dixit
+        
+      </div>
+      <div *ngIf="currentLightboxImage.description" class="top-right">
+        <button style="color: rgb(0, 255, 132);" mat-flat-button >
+          
+          
+            <fa-icon  class="fa-solid" [icon]="faLocation"></fa-icon>
+          {{ currentLightboxImage.description }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

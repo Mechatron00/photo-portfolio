@@ -1,0 +1,642 @@
+
+<div id="page-top">
+  <a href="#home" *ngIf="showButton"> <button
+    
+    mat-fab
+    type="button"
+    class="btn-floating"
+    id="btn-back-to-top"
+    
+    >
+<mat-icon style="scale: 1.3;"><span class="material-symbols-outlined">
+rocket
+</span></mat-icon>
+</button></a>
+
+  <!-- Navigation-->
+  <header class="header-area">
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="alimeNav">
+            <ul class="nav nav-underline">
+              <li class="nav-item">
+                <a
+                  class="nav-link is-active"
+                  style="
+                    color: #07aa55;
+                    filter: brightness(120%);
+                    -webkit-filter: brightness(120%);
+                    text-decoration: none;
+                  "
+                  aria-current="page"
+                  href="#home"
+                >
+                  <h5>Home</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link is-active"
+                  href="#gallary"
+                  style="
+                    color: #07aa55;
+                    filter: brightness(120%);
+                    -webkit-filter: brightness(120%);
+                    text-decoration: none;
+                  "
+                >
+                  <h5>Gallery</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link is-active"
+                  style="
+                    color: #07aa55;
+                    filter: brightness(120%);
+                    -webkit-filter: brightness(120%);
+                    text-decoration: none;
+                  "
+                  href="#connect"
+                >
+                  <h5>Connect</h5>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Masthead-->
+  <header id="home" class="masthead">
+    <div
+      class="container px-4 d-flex h-100 align-items-center justify-content-center"
+    >
+      <div class="d-flex justify-content-center">
+        <div class="text-center">
+          <h1
+            class="mx-auto my-0 text-uppercase"
+            style="font-size: 80px; line-height: 85px"
+          >
+            Hello I'm Dinesh Dixit
+          </h1>
+          <p class="text-white-50 mx-auto mt-2 mb-5 text-center">
+            An aspiring photographer with a profound passion for nature, macro,
+            and portrait photography. Through lens, the beauty of the natural
+            world comes to life, the intricacies of the microcosm are revealed,
+            and the essence of individuals is skillfully captured. But beyond
+            the physical world, I finds solace and spiritual rejuvenation in
+            exploring Lord Shiva temples. Drawn to the spiritual aura and
+            timeless architecture, I use photography to capture the divine
+            essence and sacredness of these holy places, encapsulating the
+            devotion and reverence of devotees. With every click of the camera,
+            I weaves together a narrative of exploration, spiritual discovery,
+            and artistic expression. Join me on my adventures as they traverse
+            new landscapes, delve into the microscopic world, and seek divine
+            inspiration within the sanctums of Lord Shiva temples.I invites you
+            to experience the beauty of nature, the intricacies of life, and the
+            profound spirituality that binds us all.
+          </p>
+          <div>
+            <a
+              role="cell"
+              class="btn btn-primary"
+              style="
+                filter: brightness(150%);
+                -webkit-filter: brightness(150%);
+                color: rgb(0, 0, 0);
+                font-size: medium;
+                font-weight: 700;
+                text-decoration: none;
+              "
+              >views: {{ totalViews }}</a
+            >
+          </div>
+          <a
+            class="btn btn-primary mt-2"
+            style="
+              filter: brightness(150%);
+              -webkit-filter: brightness(150%);
+              color: black;
+              text-decoration: none;
+            "
+            href="#gallary"
+            >Gallery</a
+          >
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- About-->
+  <section class="about-section text-center" id="about">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="text-white mb-4">Photography interests</h2>
+          <p class="text-white-50">
+            I'm interested in nature, wildlife and macro photography.Visit my
+            <a style="text-decoration: none;" href="https://www.behance.net/dineshdixit" target="_blank"
+              >Behance
+            </a>
+            and
+            <a style="text-decoration: none;" href="https://youpic.com/mechatron" target="_blank">YouPic </a>
+            profiles.
+          </p>
+        </div>
+      </div>
+      <!-- <img class="img-fluid" src="../../assets/photo/footer.jpg" alt="..." /> -->
+    </div>
+  </section>
+  <!-- Projects-->
+  <section class="projects-section bg-light" id="projects">
+    <div class="container px-4 px-lg-5 mb-4">
+      <!-- Featured Project Row-->
+      <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+        <div class="col-xl-8 col-lg-7">
+          <img
+            class="img-fluid mb-3 mb-lg-0"
+            src="../../assets/photo/Macros.png"
+            alt="..."
+          />
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left text-black">
+            <h4>Macros</h4>
+            <p class="text-black mb-0">
+              Macro photography is simply photographing small items, often
+              insects and flowers, but also still life like jewelry and small
+              household objects.So, here are some macro shots taken by me.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Project One Row-->
+      <div class="row gx-0 mb-1 mb-lg-0 justify-content-center">
+        <div class="col-lg-6">
+          <img
+            class="img-fluid"
+            src="../../assets/photo/Mountains.png"
+            alt="..."
+          />
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Landscapes</h4>
+                <p class="mb-0 text-light">
+                  Landscape photography is capturing an image that embodies the
+                  spirit of the outdoors. It carries a sense of being there to
+                  see something incredible. The landscapes taken by me is
+                  usually mountains and hills.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Two Row-->
+      <div class="row gx-0 justify-content-center">
+        <div class="col-lg-6">
+          <img
+            class="img-fluid"
+            src="../../assets/photo/Animals.png"
+            alt="..."
+          />
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Animals</h4>
+                <p class="mb-0 text-light">
+                  Animal/Wildlife photography is a genre of photography that
+                  records the life of animals in their natural settings, like in
+                  a forest or underwater.But my animal photography is
+                  different.Though it involves animals but not in there natural
+                  habitat.This photographs are taken from Zoo, Street.And some
+                  of my own pets.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="alime-projects-menu">
+            <div class="portfolio-menu text-center">
+              <span
+                class="nav-link"
+                id="gallary"
+                style="color: #46c785; font-size: x-large"
+                >Gallery</span
+              >
+              <hr
+                class="my-4 mx-5"
+                style="
+                  color: #00ff7b;
+                  border: 3px solid;
+                  filter: brightness(100%);
+                  -webkit-filter: brightness(100%);
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Gallery -->
+      <div class="ms-4" style="display: flex; justify-content: start">
+        <button
+          class="btn text-black"
+          style="
+            height: 30px;
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            background-image: linear-gradient(
+              to right top,
+              #238e3a,
+              #25a948,
+              #23c558,
+              #1ce268,
+              #00ff79
+            );
+            padding: 8px;
+            border-radius: 5px;
+          "
+          matRipple
+          matRippleColor="#0000007a"
+          (click)="previousPage()"
+        >
+          Previous
+        </button>
+        <button
+          class="btn text-black"
+          style="
+            height: 30px;
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(
+              to right top,
+              #238e3a,
+              #25a948,
+              #23c558,
+              #1ce268,
+              #00ff79
+            );
+            padding: 8px;
+            border-radius: 5px;
+          "
+          matRipple
+          matRippleColor="#0000007a"
+          (click)="nextPage()"
+        >
+          Next
+        </button>
+        <span
+          class="btn text-black"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            margin-left: 10px;
+            background-image: linear-gradient(
+              to right top,
+              #238e3a,
+              #25a948,
+              #23c558,
+              #1ce268,
+              #00ff79
+            );
+            padding: 5px 8px 5px 8px;
+            border-radius: 5px;
+          "
+          matRipple
+          matRippleColor="#0000007a"
+        >
+          {{ photosPerPage }} of Total: {{ totalPhotos }}
+        </span>
+      </div>
+      <app-gallery-lightbox
+        [galleryData]="dataimg"
+        [showCount]="true"
+      ></app-gallery-lightbox>
+      <!-- gallery -->
+
+      <div class="me-6" style="display: flex; justify-content: end ">
+        <button
+          class="btn text-black"
+          style="
+            height: 30px;
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            background-image: linear-gradient(
+              to right top,
+              #238e3a,
+              #25a948,
+              #23c558,
+              #1ce268,
+              #00ff79
+            );
+            padding: 8px;
+            border-radius: 5px;
+          "
+          matRipple
+          matRippleColor="#0000007a"
+          (click)="previousPage()"
+        >
+          Previous
+        </button>
+        <button
+          class="btn text-black"
+          style="
+            height: 30px;
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(
+              to right top,
+              #238e3a,
+              #25a948,
+              #23c558,
+              #1ce268,
+              #00ff79
+            );
+            padding: 8px;
+            border-radius: 5px;
+          "
+          matRipple
+          matRippleColor="#0000007a"
+          (click)="nextPage()"
+        >
+          Next
+        </button>
+        <!-- <span
+          class="btn text-black"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            margin-left: 10px;
+            background-image: linear-gradient(
+              to right top,
+              #238e3a,
+              #25a948,
+              #23c558,
+              #1ce268,
+              #00ff79
+              
+            );
+            padding: 5px 8px 5px 8px;
+            border-radius: 5px;
+          "
+          matRipple 
+          matRippleColor="#0000007a"
+        >
+          {{ photosPerPage }} of Total: {{ totalPhotos }}
+        </span> -->
+      </div>
+    </div>
+    
+  </section>
+  <!-- Signup-->
+  <section class="signup-section" id="signup">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+          <!-- paper plane -->
+          <h2 id="connect" class="text-white mb-5">Let's connect!</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact-->
+  <section class="contact-section bg-black">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 d-flex justify-content-center">
+        <div class="col-md-2 mb-3 mb-md-0">
+          <div
+            class="card py-4 h-100"
+            style="
+              background-image: linear-gradient(
+                to bottom,
+                #7900ff,
+                #9b00f2,
+                #b300e6,
+                #c500da,
+                #d400cf,
+                #e200be,
+                #ed00ad,
+                #f4009e,
+                #fa0084,
+                #fa126b,
+                #f62a54,
+                #ee3e3e
+              );
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="card-body text-center text-light">
+              <a href="https://www.instagram.com/mechatron2022/" target="_blank"
+                ><fa-icon
+                  class="text-light mb-2"
+                  style="font-size: xx-large"
+                  [icon]="faInstagram"
+                ></fa-icon
+              ></a>
+
+              <hr class="my-4 mx-auto" style="color: #ffffff" />
+              <div class="medium text-light">Instagram</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-3 mb-md-0">
+          <div
+            class="card py-4 h-100"
+            style="
+              background-color: #ffffff;
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="card-body text-center text-light">
+              <a href="https://youpic.com/mechatron" target="_blank"
+                ><img
+                  width="128"
+                  height="42"
+                  alt="YouPic-logo"
+                  src="../../assets/photo/youpic1.png"
+              /></a>
+
+              <hr class="my-4 mx-auto" style="color: #000000" />
+              <div class="medium text-black">YouPic</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-3 mb-md-0">
+          <div
+            class="card py-4 h-100"
+            style="
+              background-image: linear-gradient(
+                to bottom,
+                #0091ff,
+                #0080f8,
+                #006eef,
+                #005be5,
+                #0047d9,
+                #0c3bd2,
+                #172fcb,
+                #1f20c3,
+                #1e1bc0,
+                #1d15bc,
+                #1d0eb9,
+                #1c05b5
+              );
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="card-body text-center text-light">
+              <a href="https://www.behance.net/dineshdixit" target="_blank"
+                ><fa-icon
+                  class="text-light mb-2"
+                  style="font-size: xx-large"
+                  [icon]="faBehance"
+                ></fa-icon
+              ></a>
+
+              <hr class="my-4 mx-auto" style="color: #ffffff" />
+              <div class="medium text-light-50">Behance</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-3 mb-md-0">
+          <div
+            class="card py-4 h-100"
+            style="
+              background-image: linear-gradient(
+                to bottom,
+                #c7c7c7,
+                #9e9e9e,
+                #777777,
+                #525252,
+                #303030,
+                #222222,
+                #151515,
+                #000000,
+                #000000,
+                #000000,
+                #000000,
+                #000000
+              );
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="card-body text-center text-light">
+              <a href="https://unsplash.com/@mechatron" target="_blank"
+                ><fa-icon
+                  class="text-light mb-2"
+                  style="font-size: xx-large"
+                  [icon]="faUnsplash"
+                ></fa-icon
+              ></a>
+
+              <hr class="my-4 mx-auto" style="color: #ffffff" />
+              <div class="medium text-light-50">Unsplash</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-3 mb-md-0">
+          <div
+            class="card py-4 h-100"
+            style="
+              background-image: linear-gradient(
+                to right top,
+                #ffbc00,
+                #fda500,
+                #f98e00,
+                #f37605,
+                #eb5d12
+              );
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="card-body text-center text-light">
+              <a href="https://mechatron-portfolio.web.app/" target="_blank"
+                ><fa-icon
+                  class="text-light mb-2"
+                  style="font-size: xx-large"
+                  [icon]="faGlobe"
+                ></fa-icon
+              ></a>
+
+              <hr class="my-4 mx-auto" style="color: #000000" />
+              <div class="medium text-black">Website</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-3 mb-md-0">
+          <div
+            class="card py-4 h-100"
+            style="
+              background-image: linear-gradient(
+                to top,
+                #ff9d9d,
+                #ff8e8d,
+                #ff7f7d,
+                #ff6f6c,
+                #ff5e5b,
+                #fa524e,
+                #f44541,
+                #ee3734,
+                #e12c28,
+                #d5211c,
+                #c8130f,
+                #bb0000
+              );
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="card-body text-center text-light">
+              <a href="mailto:dixitdinesh52@gmail.com" target="_blank"
+                ><fa-icon
+                  class="text-light mb-2"
+                  style="font-size: xx-large"
+                  [icon]="faEnvelope"
+                ></fa-icon
+              ></a>
+
+              <hr class="my-4 mx-auto" style="color: #000000" />
+              <div class="medium text-black">Email</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer class="footer bg-black small text-center text-white-50">
+    <div class="container px-4 px-lg-5">
+      Copyright &copy; All rights reserved.@Dinesh Dixit.
+    </div>
+  </footer>
+
+</div>
+
+<!-- to top button -->
+ 
+
+<!-- *************************************************************************************************************************************************** -->
